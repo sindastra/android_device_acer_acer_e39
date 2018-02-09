@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<project name="sindastra/android_device_acer_acer_e39" path="device/acer/acer_e39" remote="github" revision="cm-11.0" />
+</manifest>
