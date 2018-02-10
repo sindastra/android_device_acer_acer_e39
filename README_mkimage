@@ -1,0 +1,14 @@
+This MediaTek device (MT6582) requires a header for the ramdisk and the kernel.
+
+Use the provided mkimage to add the header:
+
+Kernel:
+mkimage kernel KERNEL > kernel.img
+
+Ramdisk for recovery.img:
+mkbootfs ./ramdisk/ | minigzip > ramdisk.gz
+mkimage ramdisk.gz RECOVERY > ramdisk.img
+
+Ramdisk for boot.img:
+mkbootfs ./ramdisk/ | minigzip > ramdisk.gz
+mkimage ramdisk.gz ROOTFS > ramdisk.img
